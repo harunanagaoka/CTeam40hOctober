@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7971831813166149350}
   - component: {fileID: 7708216741862834442}
   - component: {fileID: 945889833677221014}
-  - component: {fileID: -2788606620108536573}
+  - component: {fileID: 6171976981161919098}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Obstacle
@@ -94,7 +94,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &-2788606620108536573
+--- !u!54 &6171976981161919098
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
