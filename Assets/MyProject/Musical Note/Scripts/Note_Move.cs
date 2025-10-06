@@ -1,0 +1,45 @@
+using UnityEngine;
+
+public class Note_Move : MonoBehaviour
+{
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private Vector3 m_direction = Vector3.down;
+
+    // 対象のカメラ（Inspectorで指定可、未指定ならMainCamera）
+    [SerializeField] private Camera targetCamera;
+    // カメラからの距離（Perspective用）
+    [SerializeField] private float distanceFromCamera = 10f;
+
+    // 視野範囲（左下と右上）
+    private Vector3 bottomLeft;
+    private Vector3 topRight;
+
+    void Start()
+    {
+        // カメラが指定されていなければ MainCamera を使用
+        if (targetCamera == null)
+        {
+            targetCamera = Camera.main;
+        }
+
+        // 3Dカメラの場合：Viewport座標をワールド座標に変換
+        bottomLeft = targetCamera.ViewportToWorldPoint(new Vector3(0, 0, distanceFromCamera));
+        topRight   = targetCamera.ViewportToWorldPoint(new Vector3(1, 1, distanceFromCamera));
+    }
+
+    void Update()
+    {
+        // 音符を移動
+        transform.position += m_direction * speed * Time.deltaTime;
+
+        // Cubeの位置をカメラのビューポート座標に変換
+        Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
+
+        // 画面外ならDestroy
+        if (viewportPos.x < 0f || viewportPos.x > 1f ||
+            viewportPos.y < 0f || viewportPos.y > 1f)
+        {
+            Destroy(gameObject);
+        }
+    }
+}
