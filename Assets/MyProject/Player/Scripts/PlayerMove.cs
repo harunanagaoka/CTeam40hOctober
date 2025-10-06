@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class P1Controller : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     [Header("Player Speed")]
     [SerializeField] private float m_playerMoveSpeed = 1f;
