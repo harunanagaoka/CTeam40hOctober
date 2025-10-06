@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class P1_controller : MonoBehaviour
+public class P1Controller : MonoBehaviour
 {
-    [Header("PlayerSpeed")]
-    [SerializeField] private float PlayerMoveSpeed = 1;
+    [Header("Player Speed")]
+    [SerializeField] private float m_playerMoveSpeed = 1f;
 
-    private Vector3 _velocity;
+    private Vector3 m_velocity;
 
     // 通知を受け取るメソッド名は「On + Action名」である必要がある
     private void OnMove(InputValue value)
@@ -15,12 +15,13 @@ public class P1_controller : MonoBehaviour
         var axis = value.Get<Vector2>();
 
         // 移動速度を保持
-        _velocity = new Vector3(axis.x, 0, 0);
+        m_velocity = new Vector3(axis.x, 0, 0);
     }
 
     private void Update()
     {
         // オブジェクト移動
-        transform.position += PlayerMoveSpeed * _velocity * Time.deltaTime;
+        transform.position += m_playerMoveSpeed * m_velocity * Time.deltaTime;
     }
 }
+
