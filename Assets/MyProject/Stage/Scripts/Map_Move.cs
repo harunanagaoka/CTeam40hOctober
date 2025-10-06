@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class map : MonoBehaviour
+public class Map_Move : MonoBehaviour
 {
     [SerializeField]
     private float m_moveSpeed = 5f;
