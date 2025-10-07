@@ -10,8 +10,6 @@ public class Note_Move : MonoBehaviour
     // カメラからの距離（Perspective用）
     [SerializeField] private float distanceFromCamera = 10f;
 
-    private bool m_isMovingLeft = false;
-
     // 視野範囲（左下と右上）
     private Vector3 bottomLeft;
     private Vector3 topRight;
@@ -29,17 +27,7 @@ public class Note_Move : MonoBehaviour
     void Update()
     {
         // 音符を移動
-        // aキーが押された瞬間にフラグをON
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            m_isMovingLeft = true;
-        }
-
-        // フラグがONなら左に移動し続ける
-        if (m_isMovingLeft)
-        {
             transform.position += m_direction * speed * Time.deltaTime;
-        }
 
         // Cubeの位置をカメラのビューポート座標に変換
         Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
@@ -64,6 +52,10 @@ public class Note_Move : MonoBehaviour
 
             // 入射ベクトル（進行方向）と法線から反射ベクトルを計算
             m_direction = Vector3.Reflect(m_direction, normal).normalized;
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
         }
     }
 }
