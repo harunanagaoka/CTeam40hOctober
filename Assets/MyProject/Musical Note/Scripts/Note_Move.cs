@@ -10,7 +10,6 @@ public class Note_Move : MonoBehaviour
     // カメラからの距離（Perspective用）
     [SerializeField] private float distanceFromCamera = 10f;
 
-    private bool m_isMovingLeft = false;
 
     // 視野範囲（左下と右上）
     private Vector3 bottomLeft;
@@ -29,17 +28,9 @@ public class Note_Move : MonoBehaviour
     void Update()
     {
         // 音符を移動
-        // aキーが押された瞬間にフラグをON
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            m_isMovingLeft = true;
-        }
 
-        // フラグがONなら左に移動し続ける
-        if (m_isMovingLeft)
-        {
             transform.position += m_direction * speed * Time.deltaTime;
-        }
+
 
         // Cubeの位置をカメラのビューポート座標に変換
         Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
@@ -52,18 +43,21 @@ public class Note_Move : MonoBehaviour
         }
     }
 
-    // 壁に衝突した時に呼ばれる
     private void OnCollisionEnter(Collision collision)
     {
-        // 壁に衝突した時にタグで判定
-        if (collision.gameObject.CompareTag("Wall")|| collision.gameObject.CompareTag("Obstacle"))
+        // 壁に衝突した時
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Obstacle"))
         {
-            // 衝突した壁の法線を取得
             ContactPoint contact = collision.contacts[0];
             Vector3 normal = contact.normal;
-
-            // 入射ベクトル（進行方向）と法線から反射ベクトルを計算
             m_direction = Vector3.Reflect(m_direction, normal).normalized;
+        }
+        // Playerに衝突した時
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            // Playerの向きを取得（forward方向）
+            Vector3 playerDirection = collision.gameObject.transform.GetComponent<Transform>().forward;
+            m_direction = playerDirection;
         }
     }
 }
