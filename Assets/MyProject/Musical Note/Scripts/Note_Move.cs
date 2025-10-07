@@ -56,7 +56,7 @@ public class Note_Move : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             // Player‚ÌŒü‚«‚ğæ“¾iforward•ûŒüj
-            Vector3 playerDirection = collision.gameObject.transform.GetComponent<Transform>().forward;
+            Vector3 playerDirection = collision.gameObject.transform.forward;
             m_direction = playerDirection;
         }
     }
