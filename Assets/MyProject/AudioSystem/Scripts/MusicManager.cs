@@ -11,8 +11,9 @@ public class MusicManager : MonoBehaviour
 
     public enum MusicName
     {
-        ResultFirst,
-        ResultLoop
+        Title,
+        Game,
+        End
     }
 
     public void OnPlay(MusicName musicNum)
@@ -28,10 +29,24 @@ public class MusicManager : MonoBehaviour
         m_audioSources.Stop();
     }
 
-    public void OnplayResultBGM()
+    public void OnplayTitleBGM()
     {
         OnStop();
-        m_audioSources.clip = m_audioClips[(int)MusicName.ResultFirst];
+        m_audioSources.clip = m_audioClips[(int)MusicName.Title];
+        m_audioSources.loop = true;
+        m_audioSources.Play();
+    }
+    public void OnplayGameBGM()
+    {
+        OnStop();
+        m_audioSources.clip = m_audioClips[(int)MusicName.Game];
+        m_audioSources.loop = true;
+        m_audioSources.Play();
+    }
+    public void OnplayEndBGM()
+    {
+        OnStop();
+        m_audioSources.clip = m_audioClips[(int)MusicName.End];
         m_audioSources.loop = true;
         m_audioSources.Play();
     }
