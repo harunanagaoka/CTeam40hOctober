@@ -10,6 +10,7 @@ public class Note_Move : MonoBehaviour
     // カメラからの距離（Perspective用）
     [SerializeField] private float distanceFromCamera = 10f;
 
+    public Vector3 CurrentDirection { get { return m_direction; } private set { m_direction = value; } }
 
     // 視野範囲（左下と右上）
     private Vector3 bottomLeft;
