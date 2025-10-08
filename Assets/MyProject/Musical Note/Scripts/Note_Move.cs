@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Note_Move : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class Note_Move : MonoBehaviour
         if (viewportPos.x < 0f || viewportPos.x > 1f ||
             viewportPos.y < 0f || viewportPos.y > 1f)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("TitleScene");
         }
     }
 
