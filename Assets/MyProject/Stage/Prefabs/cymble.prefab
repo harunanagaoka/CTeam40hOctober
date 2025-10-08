@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cymble
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3773f5e47c6bdff47af4f60f8a954fd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143090125701731145, guid: 3773f5e47c6bdff47af4f60f8a954fd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4322028217663751479, guid: 3773f5e47c6bdff47af4f60f8a954fd2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -60,6 +68,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a5c11f102f5ad1b44a31fe1537685046, type: 2}
+    - target: {fileID: 9157579292707280536, guid: 3773f5e47c6bdff47af4f60f8a954fd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
