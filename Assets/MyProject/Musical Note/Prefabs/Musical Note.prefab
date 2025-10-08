@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 2592229626191535388}
   - component: {fileID: 8829147094708198263}
   - component: {fileID: 1281545402004296408}
+  - component: {fileID: 470959626333451295}
   - component: {fileID: 1419431537008017108}
+  - component: {fileID: 871711836980660651}
   m_Layer: 0
   m_Name: Musical Note
   m_TagString: Musical Note
@@ -126,6 +128,22 @@ MonoBehaviour:
   m_direction: {x: -1, y: 0, z: 0}
   targetCamera: {fileID: 0}
   distanceFromCamera: 0
+--- !u!114 &470959626333451295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5384763215940909995}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f84a20deb153c4b8678ee5e197aedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_moveSpeed: 2.18
+  m_waveAmplitude: 4.52
+  m_waveFrequency: 2
+  m_noteMove: {fileID: 1281545402004296408}
 --- !u!54 &1419431537008017108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -153,3 +171,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &871711836980660651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5384763215940909995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfac88078863324dba27b0be889684b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_normalMove: {fileID: 1281545402004296408}
+  m_furaFuraMove: {fileID: 470959626333451295}
+  m_furaFuraTag: Cymbal
+  m_furaFuraReflectMove: {fileID: 470959626333451295}
+  m_noteMove: {fileID: 1281545402004296408}

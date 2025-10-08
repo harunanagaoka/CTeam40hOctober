@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Musical Note
   - Wall
+  - Cymbal
   layers:
   - Default
   - TransparentFX
