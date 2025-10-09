@@ -868,6 +868,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054746046}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054746054}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054746055}
   m_SourcePrefab: {fileID: 100100000, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
 --- !u!1001 &2051636909
 PrefabInstance:
@@ -1003,9 +1009,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &2054746050
 BoxCollider:
@@ -1028,6 +1034,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 99.68002, y: 19.856651, z: 99.566124}
   m_Center: {x: -0.2181549, y: 9.993328, z: -0.20930862}
+--- !u!95 &2054746054
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054746045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13e89ff7b3f1ec340ae74ad87c64d423, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2054746055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054746045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5d6bf48a97d74cad6c0b13d78ead5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_boolParameterName: isHit
 --- !u!1001 &4706007522915833274
 PrefabInstance:
   m_ObjectHideFlags: 0
