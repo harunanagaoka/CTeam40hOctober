@@ -3,19 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class OutOfBoundsChecker : MonoBehaviour
 {
-    private MeshRenderer m_renderer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        m_renderer = GetComponent<MeshRenderer>();
-    }
-
-    // Update is called once per frame
     void LateUpdate()
     {
-        if (!m_renderer.isVisible)
+        if (IsOutOfScreen(transform.position))
         {
             SceneManager.LoadScene("TitleScene");
         }
+    }
+
+    private bool IsOutOfScreen(Vector3 worldPosition)
+    {
+        Camera cam = Camera.main;
+        Vector3 viewportPos = cam.WorldToViewportPoint(worldPosition);
+
+        // z < 0 ‚ÍƒJƒƒ‰‚ÌŒã‚ë‚É‚¢‚é
+        return viewportPos.x < 0 || viewportPos.x > 1 ||
+               viewportPos.y < 0 || viewportPos.y > 1 ||
+               viewportPos.z < 0;
     }
 }
