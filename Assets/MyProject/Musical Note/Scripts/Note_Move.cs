@@ -37,12 +37,12 @@ public class Note_Move : MonoBehaviour
         // Cubeの位置をカメラのビューポート座標に変換
         Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
 
-        // 画面外ならDestroy
-        if (viewportPos.x < 0f || viewportPos.x > 1f ||
-            viewportPos.y < 0f || viewportPos.y > 1f)
-        {
-            SceneManager.LoadScene("TitleScene");
-        }
+        //// 画面外ならDestroy
+        //if (viewportPos.x < 0f || viewportPos.x > 1f ||
+        //    viewportPos.y < 0f || viewportPos.y > 1f)
+        //{
+        //    SceneManager.LoadScene("TitleScene");
+        //}
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -61,5 +61,10 @@ public class Note_Move : MonoBehaviour
             Vector3 playerDirection = collision.gameObject.transform.forward;
             m_direction = playerDirection;
         }
+    }
+
+    public void SetNoteDirection(Vector3 dir)
+    {
+        m_direction = dir.normalized;
     }
 }
