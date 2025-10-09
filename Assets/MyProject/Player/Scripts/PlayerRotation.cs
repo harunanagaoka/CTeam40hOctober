@@ -19,6 +19,10 @@ public class PlayerRotation : MonoBehaviour
 
     private void Start()
     {
+        if (m_playerName == 1)
+        {
+            m_currentYaw = 180f; // 初期角度を180度に設定
+        }        
         
         m_input = GetComponent<PlayerInput>();
     }
@@ -39,12 +43,12 @@ public class PlayerRotation : MonoBehaviour
         if (m_playerName == 1)
         {
             m_currentYaw += m_rotateDir * m_rotationSpeed * Time.deltaTime;
-            m_currentYaw = Mathf.Clamp(m_currentYaw, -m_maxRotationAngle, m_maxRotationAngle);
+            //m_currentYaw = Mathf.Clamp(m_currentYaw, -m_maxRotationAngle, m_maxRotationAngle);
         }
         else if (m_playerName == 2) // プレイヤー２の時
         {
             m_currentYaw += m_rotateDir * m_rotationSpeed * Time.deltaTime;
-            //m_currentYaw = Mathf.Clamp(m_currentYaw, -m_maxRotationAngle-180, m_maxRotationAngle+180);
+            m_currentYaw = Mathf.Clamp(m_currentYaw, -m_maxRotationAngle, m_maxRotationAngle);
         }
 
         // 毎フレーム回転を適用
