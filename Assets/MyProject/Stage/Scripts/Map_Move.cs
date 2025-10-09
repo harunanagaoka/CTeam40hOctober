@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Map_Move : MonoBehaviour
 {
-    // 左移動フラグ
+    // 移動フラグ
     [SerializeField]
-    private bool m_isMovingLeft = true;
+    private bool m_isMovingLeft = false;
 
+    //向きと速度
     [SerializeField]
     private float m_moveSpeed = 5f;
 
@@ -29,5 +30,10 @@ public class Map_Move : MonoBehaviour
         {
             transform.position += Vector3.left * m_moveSpeed * Time.deltaTime;
         }
+    }
+
+    public void StartMoveStage()
+    {
+        m_isMovingLeft = true;
     }
 }
