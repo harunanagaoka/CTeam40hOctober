@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Map_Move : MonoBehaviour
 {
+    // 左移動フラグ
+    [SerializeField]
+    private bool m_isMovingLeft = true;
+
     [SerializeField]
     private float m_moveSpeed = 5f;
-
-    // 左移動フラグ
-    private bool m_isMovingLeft = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
