@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &205693846162278242
+--- !u!1 &56496306686315524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,61 +8,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7719839394150634114}
+  - component: {fileID: 5588384814333061872}
   m_Layer: 0
-  m_Name: imagePlane5
+  m_Name: CH_parakeet_L_wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7719839394150634114
+--- !u!4 &5588384814333061872
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205693846162278242}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.14147414, y: -0.6928096, z: 0.6928096, w: -0.14147414}
-  m_LocalPosition: {x: -2.6712837, y: -0.06893973, z: 1.0920342}
-  m_LocalScale: {x: 39.988186, y: 39.988186, z: 39.988186}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2360431451745081431}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &728208402415715293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2192267202186552022}
-  m_Layer: 0
-  m_Name: CH_parakeet_beak_up
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2192267202186552022
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728208402415715293}
+  m_GameObject: {fileID: 56496306686315524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37101385, y: 6.1469707e-10, z: -0.07625466}
+  m_LocalPosition: {x: -0.33820876, y: -0.000000076293944, z: 0.090722494}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1354296163535052740}
+  m_Father: {fileID: 1073562840083827105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &741168903537887454
+--- !u!1 &808145688172603830
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +39,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5898130139331721022}
+  - component: {fileID: 2060017466890685040}
+  m_Layer: 0
+  m_Name: CH_parakeet_R_shoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060017466890685040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808145688172603830}
+  serializedVersion: 2
+  m_LocalRotation: {x: -6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123234e-17}
+  m_LocalPosition: {x: -0.14296272, y: 0.202665, z: 1.831056e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3503621268323114386}
+  m_Father: {fileID: 1301273796142255696}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1159575691148385565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2808464480016563065}
   m_Layer: 0
   m_Name: imagePlane2
   m_TagString: Untagged
@@ -78,22 +79,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5898130139331721022
+--- !u!4 &2808464480016563065
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741168903537887454}
+  m_GameObject: {fileID: 1159575691148385565}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.14855324, y: 0, z: 0.10975867}
   m_LocalScale: {x: 28.978153, y: 28.978153, z: 28.978153}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2360431451745081431}
+  m_Father: {fileID: 8759266822931482694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &761503166483624475
+--- !u!1 &1204348251070498629
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,40 +102,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 416871081558367100}
-  m_Layer: 0
-  m_Name: CH_parakeet_R_lowerarm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &416871081558367100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761503166483624475}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42625597, y: 0, z: -0.06496339}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3399737611264804218}
-  m_Father: {fileID: 1138828400713439128}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1240698306421697205
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6822177047322048326}
-  - component: {fileID: 2533369148361320195}
+  - component: {fileID: 6981773382226998521}
+  - component: {fileID: 5213912154694807195}
   m_Layer: 0
   m_Name: CursorP1
   m_TagString: Untagged
@@ -142,28 +111,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6822177047322048326
+--- !u!4 &6981773382226998521
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240698306421697205}
+  m_GameObject: {fileID: 1204348251070498629}
   serializedVersion: 2
   m_LocalRotation: {x: -0.004751301, y: -0.70709085, z: 0.70709085, w: -0.004751301}
   m_LocalPosition: {x: 0, y: -0.59655225, z: 0}
   m_LocalScale: {x: 0.26999992, y: 0.26999998, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 4411205543458241}
+  m_Father: {fileID: 6192034993575777734}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &2533369148361320195
+--- !u!212 &5213912154694807195
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240698306421697205}
+  m_GameObject: {fileID: 1204348251070498629}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -212,7 +181,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2580715966816325737
+--- !u!1 &2275773805940730150
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,31 +189,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5246842321009021128}
+  - component: {fileID: 4430894748609831340}
   m_Layer: 0
-  m_Name: Root
+  m_Name: CH_parakeet_L_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5246842321009021128
+--- !u!4 &4430894748609831340
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2580715966816325737}
+  m_GameObject: {fileID: 2275773805940730150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4014875e-19, y: -0.000000019073486, z: 0.000000004351928}
+  m_LocalPosition: {x: -0.14296259, y: -0.20266451, z: -5.293956e-25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3455319639659887361}
-  m_Father: {fileID: 2360431451745081431}
+  - {fileID: 4712864634441923051}
+  m_Father: {fileID: 1301273796142255696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4159057508985736636
+--- !u!1 &2326428556789364607
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,235 +221,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1138828400713439128}
-  m_Layer: 0
-  m_Name: CH_parakeet_R_arm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1138828400713439128
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4159057508985736636}
-  serializedVersion: 2
-  m_LocalRotation: {x: -8.7157646e-33, y: 8.659561e-17, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.200299, z: 0.00000000435193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 416871081558367100}
-  m_Father: {fileID: 8725482223377588228}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4277686884711416496
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1138866658215183912}
-  m_Layer: 0
-  m_Name: CH_parakeet_L_lowerarm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1138866658215183912
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4277686884711416496}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4262557, y: 0.000000076293944, z: 0.06496337}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2001920349759207460}
-  m_Father: {fileID: 5615620754349214981}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4304529557139334883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2360431451745081431}
-  m_Layer: 0
-  m_Name: CH_parakeetP1
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2360431451745081431
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4304529557139334883}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: 0, z: 10}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 4411205543458241}
-  - {fileID: 1617736293296496100}
-  - {fileID: 5898130139331721022}
-  - {fileID: 2624500871637227415}
-  - {fileID: 3848546482338639607}
-  - {fileID: 7719839394150634114}
-  - {fileID: 6568213977380244596}
-  - {fileID: 5246842321009021128}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4378433898927552583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3399737611264804218}
-  m_Layer: 0
-  m_Name: CH_parakeet_R_wing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3399737611264804218
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4378433898927552583}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33821, y: 0, z: -0.0907226}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 416871081558367100}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4649813171706177505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8725482223377588228}
-  m_Layer: 0
-  m_Name: CH_parakeet_R_shoulder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8725482223377588228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4649813171706177505}
-  serializedVersion: 2
-  m_LocalRotation: {x: -6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123234e-17}
-  m_LocalPosition: {x: -0.14296272, y: 0.202665, z: 1.831056e-15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1138828400713439128}
-  m_Father: {fileID: 3455319639659887361}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4743029957577473493
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2001920349759207460}
-  m_Layer: 0
-  m_Name: CH_parakeet_L_wing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2001920349759207460
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4743029957577473493}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33820876, y: -0.000000076293944, z: 0.090722494}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1138866658215183912}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6518922492958220152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1617736293296496100}
-  m_Layer: 0
-  m_Name: imagePlane1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1617736293296496100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518922492958220152}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: -7.105427e-17, z: 0.030802917}
-  m_LocalScale: {x: 28.698841, y: 28.698841, z: 28.698841}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2360431451745081431}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6903974162989354208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6568213977380244596}
+  - component: {fileID: 4297252770876100329}
   m_Layer: 0
   m_Name: imagePlane6
   m_TagString: Untagged
@@ -488,22 +229,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6568213977380244596
+--- !u!4 &4297252770876100329
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6903974162989354208}
+  m_GameObject: {fileID: 2326428556789364607}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.010691015, y: 0, z: 0.32607597}
   m_LocalScale: {x: 31.978678, y: 31.978678, z: 31.978678}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2360431451745081431}
+  m_Father: {fileID: 8759266822931482694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6990348429448115026
+--- !u!1 &2491987367313378100
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -511,7 +252,132 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8691175726428971758}
+  - component: {fileID: 6824944792000057404}
+  m_Layer: 0
+  m_Name: imagePlane3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6824944792000057404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491987367313378100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.10731421, y: -0.6989161, z: -0.10731421, w: 0.6989161}
+  m_LocalPosition: {x: 4, y: 0.5384814, z: 1.5597394}
+  m_LocalScale: {x: 30.580511, y: 30.580511, z: 30.580511}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8759266822931482694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3168004958373507872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4915008907392520214}
+  m_Layer: 0
+  m_Name: CH_parakeet_R_lowerarm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4915008907392520214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168004958373507872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42625597, y: 0, z: -0.06496339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4033082093920212866}
+  m_Father: {fileID: 3503621268323114386}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3451716255953818012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114219522898277522}
+  m_Layer: 0
+  m_Name: imagePlane1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &114219522898277522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451716255953818012}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 4, y: -7.105427e-17, z: 0.030802917}
+  m_LocalScale: {x: 28.698841, y: 28.698841, z: 28.698841}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8759266822931482694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4040362939295366160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4696722001650783498}
+  m_Layer: 0
+  m_Name: CH_parakeet_beak_up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4696722001650783498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040362939295366160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.37101385, y: 6.1469707e-10, z: -0.07625466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000951906382585942}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4222349005547977526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081704092552793229}
   m_Layer: 0
   m_Name: CH_parakeet_beak_low
   m_TagString: Untagged
@@ -519,22 +385,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8691175726428971758
+--- !u!4 &2081704092552793229
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990348429448115026}
+  m_GameObject: {fileID: 4222349005547977526}
   serializedVersion: 2
   m_LocalRotation: {x: -0.49838647, y: -0.49838647, z: 0.5016083, w: 0.5016083}
   m_LocalPosition: {x: -0.35217956, y: 0.0000000024425124, z: 0.10315544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1354296163535052740}
+  m_Father: {fileID: 1000951906382585942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7404944591047807798
+--- !u!1 &5530266774277348827
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -542,31 +408,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5615620754349214981}
+  - component: {fileID: 8759266822931482694}
   m_Layer: 0
-  m_Name: CH_parakeet_L_arm
-  m_TagString: Untagged
+  m_Name: CH_parakeetP1 1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5615620754349214981
+--- !u!4 &8759266822931482694
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7404944591047807798}
+  m_GameObject: {fileID: 5530266774277348827}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.000000076293944, y: -0.20029958, z: -0.000000004351928}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8, y: 0, z: 10}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1138866658215183912}
-  m_Father: {fileID: 1166681298346304951}
+  - {fileID: 6192034993575777734}
+  - {fileID: 114219522898277522}
+  - {fileID: 2808464480016563065}
+  - {fileID: 6824944792000057404}
+  - {fileID: 5032435096092914872}
+  - {fileID: 6013533396629607521}
+  - {fileID: 4297252770876100329}
+  - {fileID: 1216893780132644801}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7428248622029202192
+--- !u!1 &6289713024558011107
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -574,33 +447,32 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3455319639659887361}
+  - component: {fileID: 1000951906382585942}
   m_Layer: 0
-  m_Name: CH_parakeet_body
+  m_Name: CH_parakeet_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3455319639659887361
+--- !u!4 &1000951906382585942
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7428248622029202192}
+  m_GameObject: {fileID: 6289713024558011107}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.2859253, z: 5.293956e-25}
+  m_LocalRotation: {x: -6.974784e-21, y: 0.7048249, z: 0.000000006894959, w: 0.7093813}
+  m_LocalPosition: {x: -0.33774143, y: -1.7763568e-17, z: -2.2854527e-24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1354296163535052740}
-  - {fileID: 1166681298346304951}
-  - {fileID: 8725482223377588228}
-  m_Father: {fileID: 5246842321009021128}
+  - {fileID: 2081704092552793229}
+  - {fileID: 4696722001650783498}
+  m_Father: {fileID: 1301273796142255696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7501640609998757693
+--- !u!1 &6541465306015917134
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -608,14 +480,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4411205543458241}
-  - component: {fileID: 7109972125034081701}
-  - component: {fileID: 5059980220050739400}
-  - component: {fileID: 4448365691515957200}
-  - component: {fileID: 3073050237045397924}
-  - component: {fileID: 5761549636674977183}
-  - component: {fileID: 6791409154871350462}
-  - component: {fileID: 4536390073555110648}
+  - component: {fileID: 5032435096092914872}
+  m_Layer: 0
+  m_Name: imagePlane4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5032435096092914872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6541465306015917134}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -3.9601016, y: 0, z: 1.109343}
+  m_LocalScale: {x: 25.873085, y: 25.873085, z: 25.873085}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8759266822931482694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7356854226539466349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6192034993575777734}
+  - component: {fileID: 3798887330623995706}
+  - component: {fileID: 8855288400718808605}
+  - component: {fileID: 7127588658789667223}
+  - component: {fileID: 8651699796045003153}
+  - component: {fileID: 472567815656067779}
+  - component: {fileID: 4615714553094176271}
+  - component: {fileID: 2348434098079788741}
   m_Layer: 0
   m_Name: CH_parakeet
   m_TagString: Player
@@ -623,37 +526,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4411205543458241
+--- !u!4 &6192034993575777734
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.99997747, z: -0, w: -0.0067193545}
   m_LocalPosition: {x: -0, y: 0.59655225, z: -3.5527136e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6822177047322048326}
-  m_Father: {fileID: 2360431451745081431}
+  - {fileID: 6981773382226998521}
+  m_Father: {fileID: 8759266822931482694}
   m_LocalEulerAnglesHint: {x: 0, y: 180.77, z: 0}
---- !u!33 &7109972125034081701
+--- !u!33 &3798887330623995706
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Mesh: {fileID: 6806206560341116224, guid: 5f157bcc38aba2044b89b82a150a0656, type: 3}
---- !u!23 &5059980220050739400
+--- !u!23 &8855288400718808605
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -692,26 +595,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4448365691515957200
+--- !u!114 &7127588658789667223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88bfa559ce27d9a48be3ee8b53ac86e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_playerMoveSpeed: 13
---- !u!114 &3073050237045397924
+--- !u!114 &8651699796045003153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 905568f8ab2722e4fa788ac10d445c79, type: 3}
@@ -720,13 +623,13 @@ MonoBehaviour:
   m_playerName: 1
   m_rotationSpeed: 90
   m_maxRotationAngle: 45
---- !u!135 &5761549636674977183
+--- !u!135 &472567815656067779
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -741,13 +644,13 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.6
   m_Center: {x: 0, y: -0.035042405, z: -0.13169079}
---- !u!54 &6791409154871350462
+--- !u!54 &4615714553094176271
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -768,13 +671,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 92
   m_CollisionDetection: 0
---- !u!114 &4536390073555110648
+--- !u!114 &2348434098079788741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501640609998757693}
+  m_GameObject: {fileID: 7356854226539466349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -798,7 +701,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!1 &7905267595116953598
+--- !u!1 &7419380728780363825
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -806,31 +709,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1166681298346304951}
+  - component: {fileID: 1301273796142255696}
   m_Layer: 0
-  m_Name: CH_parakeet_L_shoulder
+  m_Name: CH_parakeet_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1166681298346304951
+--- !u!4 &1301273796142255696
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7905267595116953598}
+  m_GameObject: {fileID: 7419380728780363825}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0.2859253, z: 5.293956e-25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1000951906382585942}
+  - {fileID: 4430894748609831340}
+  - {fileID: 2060017466890685040}
+  m_Father: {fileID: 1216893780132644801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7425592904448534642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073562840083827105}
+  m_Layer: 0
+  m_Name: CH_parakeet_L_lowerarm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073562840083827105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425592904448534642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14296259, y: -0.20266451, z: -5.293956e-25}
+  m_LocalPosition: {x: -0.4262557, y: 0.000000076293944, z: 0.06496337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5615620754349214981}
-  m_Father: {fileID: 3455319639659887361}
+  - {fileID: 5588384814333061872}
+  m_Father: {fileID: 4712864634441923051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8007211850982651729
+--- !u!1 &7672513378565312088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -838,32 +775,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1354296163535052740}
+  - component: {fileID: 4033082093920212866}
   m_Layer: 0
-  m_Name: CH_parakeet_head
+  m_Name: CH_parakeet_R_wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1354296163535052740
+--- !u!4 &4033082093920212866
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8007211850982651729}
+  m_GameObject: {fileID: 7672513378565312088}
   serializedVersion: 2
-  m_LocalRotation: {x: -6.974784e-21, y: 0.7048249, z: 0.000000006894959, w: 0.7093813}
-  m_LocalPosition: {x: -0.33774143, y: -1.7763568e-17, z: -2.2854527e-24}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.33821, y: 0, z: -0.0907226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4915008907392520214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8285383851645573191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3503621268323114386}
+  m_Layer: 0
+  m_Name: CH_parakeet_R_arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3503621268323114386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285383851645573191}
+  serializedVersion: 2
+  m_LocalRotation: {x: -8.7157646e-33, y: 8.659561e-17, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0.200299, z: 0.00000000435193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8691175726428971758}
-  - {fileID: 2192267202186552022}
-  m_Father: {fileID: 3455319639659887361}
+  - {fileID: 4915008907392520214}
+  m_Father: {fileID: 2060017466890685040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8225763813128243705
+--- !u!1 &8381618057238895463
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,30 +838,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2624500871637227415}
+  - component: {fileID: 6013533396629607521}
   m_Layer: 0
-  m_Name: imagePlane3
+  m_Name: imagePlane5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2624500871637227415
+--- !u!4 &6013533396629607521
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8225763813128243705}
+  m_GameObject: {fileID: 8381618057238895463}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10731421, y: -0.6989161, z: -0.10731421, w: 0.6989161}
-  m_LocalPosition: {x: 4, y: 0.5384814, z: 1.5597394}
-  m_LocalScale: {x: 30.580511, y: 30.580511, z: 30.580511}
+  m_LocalRotation: {x: -0.14147414, y: -0.6928096, z: 0.6928096, w: -0.14147414}
+  m_LocalPosition: {x: -2.6712837, y: -0.06893973, z: 1.0920342}
+  m_LocalScale: {x: 39.988186, y: 39.988186, z: 39.988186}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2360431451745081431}
+  m_Father: {fileID: 8759266822931482694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8830611951140562465
+--- !u!1 &9100209662347723727
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,26 +869,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3848546482338639607}
+  - component: {fileID: 4712864634441923051}
   m_Layer: 0
-  m_Name: imagePlane4
+  m_Name: CH_parakeet_L_arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3848546482338639607
+--- !u!4 &4712864634441923051
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8830611951140562465}
+  m_GameObject: {fileID: 9100209662347723727}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.9601016, y: 0, z: 1.109343}
-  m_LocalScale: {x: 25.873085, y: 25.873085, z: 25.873085}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.000000076293944, y: -0.20029958, z: -0.000000004351928}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2360431451745081431}
+  m_Children:
+  - {fileID: 1073562840083827105}
+  m_Father: {fileID: 4430894748609831340}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9192397614201982639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216893780132644801}
+  m_Layer: 0
+  m_Name: Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216893780132644801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9192397614201982639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.4014875e-19, y: -0.000000019073486, z: 0.000000004351928}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1301273796142255696}
+  m_Father: {fileID: 8759266822931482694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
