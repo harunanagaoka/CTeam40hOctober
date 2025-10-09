@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &330301499139302138
+--- !u!1001 &8511303038861904166
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8000002
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.906
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       propertyPath: m_Name
-      value: note
+      value: note 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       propertyPath: m_TagString
@@ -62,32 +62,32 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3774647900740120019}
+      addedObject: {fileID: 8242993864373900731}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1065476800016488096}
+      addedObject: {fileID: 5986665736633660998}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 23252843501805306}
+      addedObject: {fileID: 1785032798098718129}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4670363349939104276}
+      addedObject: {fileID: 2827959155974033529}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5312890547255622798}
+      addedObject: {fileID: 3961873064364236820}
   m_SourcePrefab: {fileID: 100100000, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
---- !u!1 &600138354045427627 stripped
+--- !u!1 &8853884269183644791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5b80ccb6fb07a2489fe091b9a710943, type: 3}
-  m_PrefabInstance: {fileID: 330301499139302138}
+  m_PrefabInstance: {fileID: 8511303038861904166}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &3774647900740120019
+--- !u!135 &8242993864373900731
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600138354045427627}
+  m_GameObject: {fileID: 8853884269183644791}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -102,13 +102,13 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 52.5
   m_Center: {x: -0.2181549, y: 9.993328, z: -0.20930862}
---- !u!114 &1065476800016488096
+--- !u!114 &5986665736633660998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600138354045427627}
+  m_GameObject: {fileID: 8853884269183644791}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f84a20deb153c4b8678ee5e197aedb, type: 3}
@@ -117,47 +117,47 @@ MonoBehaviour:
   m_moveSpeed: 2.18
   m_waveAmplitude: 4.52
   m_waveFrequency: 2
-  m_noteMove: {fileID: 23252843501805306}
---- !u!114 &23252843501805306
+  m_noteMove: {fileID: 1785032798098718129}
+--- !u!114 &1785032798098718129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600138354045427627}
+  m_GameObject: {fileID: 8853884269183644791}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d1b33035aac25d439a07bfbdc6bcbb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   m_direction: {x: 0, y: 0, z: -1}
   targetCamera: {fileID: 0}
   distanceFromCamera: 0
---- !u!114 &4670363349939104276
+--- !u!114 &2827959155974033529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600138354045427627}
+  m_GameObject: {fileID: 8853884269183644791}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abfac88078863324dba27b0be889684b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_normalMove: {fileID: 23252843501805306}
-  m_furaFuraMove: {fileID: 1065476800016488096}
+  m_normalMove: {fileID: 1785032798098718129}
+  m_furaFuraMove: {fileID: 5986665736633660998}
   m_furaFuraTag: Cymbal
-  m_furaFuraReflectMove: {fileID: 1065476800016488096}
-  m_noteMove: {fileID: 23252843501805306}
---- !u!54 &5312890547255622798
+  m_furaFuraReflectMove: {fileID: 5986665736633660998}
+  m_noteMove: {fileID: 1785032798098718129}
+--- !u!54 &3961873064364236820
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600138354045427627}
+  m_GameObject: {fileID: 8853884269183644791}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
