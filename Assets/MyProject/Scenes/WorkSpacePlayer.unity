@@ -206,6 +206,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1794201157}
     m_Modifications:
+    - target: {fileID: 945889833677221014, guid: 4348dc664e7c29b4995c6b47353516f4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: be5ea478e2e1f274784908c4370678ba, type: 2}
     - target: {fileID: 2579475551933823775, guid: 4348dc664e7c29b4995c6b47353516f4, type: 3}
       propertyPath: m_Name
       value: Triangle
@@ -445,10 +449,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 532176188621106103, guid: 0e5539352ec46284582813b31c54aca6, type: 3}
-      propertyPath: m_playerName
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7277517140729824612, guid: 0e5539352ec46284582813b31c54aca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.041501522
