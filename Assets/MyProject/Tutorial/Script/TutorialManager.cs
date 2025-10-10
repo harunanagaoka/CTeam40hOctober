@@ -3,12 +3,15 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject m_startObject;
+
+    [SerializeField]
     private GameObject m_desireObject;
 
     [SerializeField]
     private GameObject m_musicalNote;
 
-    [SerializeField] 
+    [SerializeField]
     private Vector3 m_offsetOfDesire = Vector3.zero;
 
     private Note_Move m_noteMove;
@@ -22,10 +25,11 @@ public class TutorialManager : MonoBehaviour
 
     private void StartTutorial()
     {
-        GameObject obj = Instantiate(m_musicalNote, transform.localPosition, m_musicalNote.transform.rotation);
+        Vector3 m_startPos = m_startObject.transform.position;
+        GameObject obj = Instantiate(m_musicalNote, m_startPos, m_musicalNote.transform.rotation);
         m_noteMove = obj.GetComponent<Note_Move>();
-        Vector3 P1Position = m_desireObject.transform.localPosition;
-        m_desirePosition = P1Position - transform.localPosition;
+        Vector3 P1Position = m_desireObject.transform.position;
+        m_desirePosition = P1Position - transform.position;
         m_desirePosition += m_offsetOfDesire;
         m_noteMove.SetNoteDirection(m_desirePosition);
     }
