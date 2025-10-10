@@ -8,7 +8,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField]
     private GameObject m_musicalPrefab;
 
-    [SerializeField] 
+    [SerializeField]
     private Vector3 m_offsetOfDesire = Vector3.zero;
 
     private GoalManager m_goal;
@@ -28,11 +28,11 @@ public class TutorialManager : MonoBehaviour
 
     private void StartTutorial()
     {
-        GameObject obj = Instantiate(m_musicalPrefab, transform.localPosition, m_musicalPrefab.transform.rotation);
+        GameObject obj = Instantiate(m_musicalPrefab, transform.position, m_musicalPrefab.transform.rotation);
         m_goalManagaer.AddNoteObject(obj);
         m_noteMove = obj.GetComponent<Note_Move>();
-        Vector3 P1Position = m_desireObject.transform.localPosition;
-        m_desirePosition = P1Position - transform.localPosition;
+        Vector3 P1Position = m_desireObject.transform.position;
+        m_desirePosition = P1Position - transform.position;
         m_desirePosition += m_offsetOfDesire;
         m_noteMove.SetNoteDirection(m_desirePosition);
     }

@@ -17,6 +17,7 @@ public class Note_Move : MonoBehaviour
     private Vector3 topRight;
 
     private Vector3 m_initPos = Vector3.zero;
+    private Vector3 m_currentPos = Vector3.zero;
 
     void Start()
     {
@@ -31,8 +32,13 @@ public class Note_Move : MonoBehaviour
 
     void Update()
     {
+
         // 音符を移動
         transform.position += m_direction * speed * Time.deltaTime;
+
+        m_currentPos = transform.position;
+        m_currentPos.y = m_initPos.y;
+        transform.position = m_currentPos;
 
         // Cubeの位置をカメラのビューポート座標に変換
         Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
