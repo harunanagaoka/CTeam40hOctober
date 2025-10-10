@@ -28,7 +28,9 @@ public class TutorialManager : MonoBehaviour
 
     private void StartTutorial()
     {
-        GameObject obj = Instantiate(m_musicalPrefab, transform.position, m_musicalPrefab.transform.rotation);
+        Vector3 appearPos = transform.position;
+        appearPos.y = 0.906f;
+        GameObject obj = Instantiate(m_musicalPrefab, appearPos, m_musicalPrefab.transform.rotation);
         m_goalManagaer.AddNoteObject(obj);
         m_noteMove = obj.GetComponent<Note_Move>();
         Vector3 P1Position = m_desireObject.transform.position;
