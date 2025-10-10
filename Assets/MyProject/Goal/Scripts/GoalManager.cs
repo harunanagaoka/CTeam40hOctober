@@ -6,7 +6,6 @@ public class GoalManager : MonoBehaviour
     [SerializeField]
     private GameObject m_goalObject;
 
-    [SerializeField]
     private GameObject m_musicalNote;
 
     [SerializeField]
@@ -14,8 +13,6 @@ public class GoalManager : MonoBehaviour
 
     [SerializeField]
     private GameObject m_sedGoal;
-
-
 
     private Note_Move m_noteMove;
 
@@ -56,5 +53,10 @@ public class GoalManager : MonoBehaviour
             m_desirePosition += m_offsetOfDesire;
             m_noteMove.SetNoteDirection(m_desirePosition);
         }
+    }
+
+    public void AddNoteObject(GameObject note)
+    {
+        m_musicalNote = note;
     }
 }

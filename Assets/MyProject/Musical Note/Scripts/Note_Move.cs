@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Note_Move : MonoBehaviour
 {
@@ -17,8 +16,11 @@ public class Note_Move : MonoBehaviour
     private Vector3 bottomLeft;
     private Vector3 topRight;
 
+    private Vector3 m_initPos = Vector3.zero;
+
     void Start()
     {
+        m_initPos = transform.position;
         if (targetCamera == null)
         {
             targetCamera = Camera.main;
@@ -30,19 +32,10 @@ public class Note_Move : MonoBehaviour
     void Update()
     {
         // 音符を移動
-
-            transform.position += m_direction * speed * Time.deltaTime;
-
+        transform.position += m_direction * speed * Time.deltaTime;
 
         // Cubeの位置をカメラのビューポート座標に変換
         Vector3 viewportPos = targetCamera.WorldToViewportPoint(transform.position);
-
-        //// 画面外ならDestroy
-        //if (viewportPos.x < 0f || viewportPos.x > 1f ||
-        //    viewportPos.y < 0f || viewportPos.y > 1f)
-        //{
-        //    SceneManager.LoadScene("TitleScene");
-        //}
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -52,14 +45,16 @@ public class Note_Move : MonoBehaviour
         {
             ContactPoint contact = collision.contacts[0];
             Vector3 normal = contact.normal;
-            m_direction = Vector3.Reflect(m_direction, normal).normalized;
+            Vector3 dir = Vector3.Reflect(m_direction, normal).normalized;
+            m_direction = new Vector3(dir.x, 0, dir.z);
         }
         // Playerに衝突した時
         else if (collision.gameObject.CompareTag("Player"))
         {
             // Playerの向きを取得（forward方向）
             Vector3 playerDirection = collision.gameObject.transform.forward;
-            m_direction = playerDirection;
+            Vector3 dir = playerDirection;
+            m_direction = new Vector3(dir.x, 0, dir.z);
         }
     }
 
