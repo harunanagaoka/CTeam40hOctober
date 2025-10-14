@@ -9,7 +9,8 @@ public class Cymbal_se : MonoBehaviour
 
     void Start()
     {
-
+        GameObject ob = GameObject.Find("SEManager");
+        seManager = ob.GetComponent<SEManager>();
         if (cymbalSEs == null || cymbalSEs.Length == 0)
         {
             cymbalSEs = new SEManager.SoundEffectName[3];

@@ -10,6 +10,8 @@ public class Accordion_se : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject ob = GameObject.Find("SEManager");
+        seManager = ob.GetComponent<SEManager>();
 
         if (accordionSEs == null || accordionSEs.Length == 0)
         {

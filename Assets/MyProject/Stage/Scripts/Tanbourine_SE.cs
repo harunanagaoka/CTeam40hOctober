@@ -9,6 +9,8 @@ public class Tanbourine_SE : MonoBehaviour
 
     void Start()
     {
+        GameObject ob = GameObject.Find("SEManager");
+        seManager = ob.GetComponent<SEManager>();
         if (tambourineSEs == null || tambourineSEs.Length == 0)
         {
             tambourineSEs = new SEManager.SoundEffectName[3];
